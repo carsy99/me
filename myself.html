@@ -3,19 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>陳喬莘簡介</title>
+	<title>陳喬莘首頁</title>
 	<style type="text/css">
 	* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
 	h1 {color:seagreen; font-size:60px;}
 	h2 {color:#125555; font-size:40px;}
+	h3 {color:#153144; font-size:20px;}
+	h4 {color:#153144; font-size:20px;}
+	h5 {color:#153144; font-size:20px;}
 	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "greenheado.png";
+  			document.getElementById("h2text").innerText = "Carsy";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "greenhead.png";
+  			document.getElementById("h2text").innerText = "Qiao Xin";
+		}
+	</script>
 
 </head>
 <body>
-	<table width="70%">
+	<table width="50%">
 		<tr>
 			<td>
-				<img src="greenheado.jpg"></img>
+				<img src="greenhead.png"id="pic" onmouseover="change1()" onmouseout="change2()"></img>
 			</td>
 			<td>
 				<h1>陳喬莘</h1>
@@ -24,23 +38,23 @@
 		</tr>
 	</table>
 
-	<table width="70%" border="1">
+	<table width="50%" border="5">
 		<tr>
 			<td>
-				關於我<br>
+				<h3>關於我</h3><br>
 				系級：<a>資訊管理學系二B</a><br>
 				學號: <a>411146504</a><br>
 				E-Mail: <a href="mailto:s1114650@o365st.pu.edu.tw">s1114650@o365st.pu.edu.tw</a><br>
 			</td>
 
 			<td>
-				座右銘<br>
+				<h4>座右銘</h4><br>
 				「123」<br>
 			</td>
 
 			<td>
-				推薦影片<br>
-				<iframe src="https://youtu.be/embed/F9CrRG6j2SM" allowfullscreen></iframe>
+				<h5>推薦影片</h5><br>
+				<iframe src="https://www.youtube.com/embed/-jEmhjZr8RE" allowfullscreen></iframe>
 			</td>
 		</tr>
 	</table>
